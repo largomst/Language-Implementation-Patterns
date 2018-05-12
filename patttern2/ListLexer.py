@@ -32,7 +32,7 @@ class Lexer:
         if self.c == x:
             self.consume()
         else:
-            raise Exception(f'excepting {x}; found c')
+            raise Exception(f'expecting {x}; found c')
 
     @abstractmethod
     def nextToken(self): pass
